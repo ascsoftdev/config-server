@@ -8,3 +8,10 @@ spring:
           uri: https://github.com/ascsoftdev/spring-cloud-config-store
           search-paths:
           - '*service'
+        bootstrap: false
+management:
+  endpoints:
+    web:
+      exposure:
+        include:
+        - '*'
